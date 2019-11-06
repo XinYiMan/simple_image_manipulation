@@ -231,6 +231,7 @@ object Form1: TForm1
     Height = 25
     Top = 424
     Width = 216
+    Anchors = [akRight, akBottom]
     Caption = 'Save'
     OnClick = Button13Click
     TabOrder = 22

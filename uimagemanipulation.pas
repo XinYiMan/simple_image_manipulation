@@ -395,6 +395,8 @@ begin
           Inc(p);
         end;
 
+        Self.EditedImage.InvalidateBitmap;
+
      finally
 
     end;
@@ -441,6 +443,8 @@ begin
           p^.alpha := Self.CalcDecodeGamma[p^.alpha];
           Inc(p);
         end;
+
+        Self.EditedImage.InvalidateBitmap;
 
      finally
 
