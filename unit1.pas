@@ -16,6 +16,7 @@ type
     Button10: TButton;
     Button11: TButton;
     Button12: TButton;
+    Button13: TButton;
     Button2: TButton;
     Button3: TButton;
     Button4: TButton;
@@ -25,6 +26,7 @@ type
     Button8: TButton;
     Button9: TButton;
     Edit1: TEdit;
+    SaveDialog1: TSaveDialog;
     Txt_EncodeGamma: TEdit;
     Txt_DecodeGamma: TEdit;
     Txt_Brightness_Value: TEdit;
@@ -39,6 +41,7 @@ type
     procedure Button10Click(Sender: TObject);
     procedure Button11Click(Sender: TObject);
     procedure Button12Click(Sender: TObject);
+    procedure Button13Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
@@ -89,6 +92,9 @@ begin
      Self.Button8.Enabled:=value;
      Self.Button9.Enabled:=value;
      Self.Button10.Enabled:=value;
+     Self.Button11.Enabled:=value;
+     Self.Button12.Enabled:=value;
+     Self.Button13.Enabled:=value;
 
      Self.Txt_TopRect.Enabled:=value;
      Self.Txt_BottomRect.Enabled:=value;
@@ -182,6 +188,18 @@ begin
      end;
 
      Self.Image1.Invalidate;
+end;
+
+procedure TForm1.Button13Click(Sender: TObject);
+begin
+     if Self.SaveDialog1.Execute then
+     begin
+
+          if FileExists(Self.SaveDialog1.FileName) then
+             DeleteFile(Self.SaveDialog1.FileName);
+          Self.Image1.Picture.SaveToFile(Self.SaveDialog1.FileName);
+          ShowMessage('File saved');
+     end;
 end;
 
 procedure TForm1.Button2Click(Sender: TObject);
