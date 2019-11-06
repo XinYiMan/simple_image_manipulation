@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="ImageManipulationGui.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="15" Y="11"/>
+        <UsageCount Value="31"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unit1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit1"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="145"/>
+        <CursorPos X="38" Y="162"/>
+        <UsageCount Value="31"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uimagemanipulation.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uImageManipulation"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="396"/>
+        <CursorPos X="91" Y="442"/>
+        <UsageCount Value="31"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uimagesmart.pas"/>
+        <UnitName Value="uImageSmart"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="24"/>
+        <CursorPos X="67" Y="34"/>
+        <UsageCount Value="22"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/fpcupdeluxe/installazioni/20190826/lazarus/lcl/include/fpimagebitmap.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="118"/>
+        <CursorPos X="30" Y="132"/>
+        <UsageCount Value="13"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../../Documents/pkg/bgrabitmap-10.6.3/bgrabitmap/bgradefaultbitmap.pas"/>
+        <UnitName Value="BGRADefaultBitmap"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="551"/>
+        <CursorPos X="15" Y="572"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../../Documents/pkg/bgrabitmap-10.6.3/bgrabitmap/bgracustombitmap.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="302"/>
+        <CursorPos X="79" Y="324"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../../Documents/pkg/bgrabitmap-10.6.3/bgrabitmap/bgrabitmaptypes.pas"/>
+        <UnitName Value="BGRABitmapTypes"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="114"/>
+        <CursorPos X="22" Y="137"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/fpcupdeluxe/installazioni/20190826/fpcsrc/packages/fcl-image/src/fpimage.pp"/>
+        <UnitName Value="FPImage"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="184"/>
+        <CursorPos X="3" Y="207"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/fpcupdeluxe/installazioni/20190826/fpcsrc/packages/fcl-image/src/fpreadjpeg.pas"/>
+        <UnitName Value="FPReadJPEG"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="11"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/fpcupdeluxe/installazioni/20190826/fpcsrc/packages/fcl-image/src/fpwritebmp.pp"/>
+        <UnitName Value="FPWriteBMP"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="11"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/fpcupdeluxe/installazioni/20190826/lazarus/lcl/include/picture.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="572"/>
+        <CursorPos X="49" Y="589"/>
+        <UsageCount Value="11"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/fpcupdeluxe/installazioni/20190826/fpcsrc/packages/fcl-image/src/fpreadpng.pp"/>
+        <UnitName Value="FPReadPNG"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit>
+    </Units>
+    <General>
+      <ActiveWindowIndexAtStart Value="-1"/>
+    </General>
+    <JumpHistory HistoryIndex="-1"/>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
