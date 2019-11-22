@@ -5,7 +5,7 @@ unit uImageManipulation;
 interface
 
 uses
-  Classes, SysUtils, BGRABitmap, BGRABitmapTypes, FPImage, FPReadJpeg, FPReadPng, Math;
+  Classes, SysUtils, BGRABitmap, BGRABitmapTypes, FPImage, FPReadJpeg, FPReadPng, FPWriteJpeg, FPWritePng, Math;
 
 
   type TImageType = (itIgnore, itJPEG, itBMP, itPNG);
@@ -32,7 +32,7 @@ uses
           function CutRectangle(FSelectionRect : TRect) : boolean;
           procedure SetOriginalImage;
           procedure SaveToFile(name_file : string);
-          procedure SaveToStream(app_stream : TMemoryStream);
+          procedure SaveToStream(app_stream : TMemoryStream; mode : TImageType = itIgnore);
           procedure RotateLeft();
           procedure RotateRight();
           procedure VerticalFlip();
@@ -134,7 +134,11 @@ begin
             W := FSelectionRect.Right  - FSelectionRect.Left;
             H := FSelectionRect.Bottom - FSelectionRect.Top;
             Bmp.SetSize(W, H);
-            Bmp.Canvas.CopyRect(Rect(0,0,W,H), Self.EditedImage.Bitmap.Canvas, FSelectionRect);
+            {$ifdef BGRABITMAP_DONT_USE_LCL}
+            Bmp.Canvas.CopyRect(Rect(0,0,W,H), Self.EditedImage, FSelectionRect);
+            {$else}
+             Bmp.Canvas.CopyRect(Rect(0,0,W,H), Self.EditedImage.Bitmap.Canvas, FSelectionRect);
+            {$endif}
             Self.EditedImage.Assign(Bmp);
             result := true;
           finally
@@ -173,14 +177,32 @@ begin
      end;
 end;
 
-procedure TImageManipulation.SaveToStream(app_stream: TMemoryStream);
+procedure TImageManipulation.SaveToStream(app_stream: TMemoryStream; mode: TImageType);
+var
+   jpgWriter : TFPWriterJPEG; //in unit FPReadJpeg
+   pngWriter : TFPWriterPNG; //in unit FPReadPng
 begin
   try
      try
 
-
         app_stream.Position:=0;
-        Self.EditedImage.Bitmap.SaveToStream(app_stream);
+        case mode of
+             itJPEG : begin
+                           jpgWriter := TFPWriterJPEG.Create;
+                           Self.EditedImage.SaveToStream(app_stream, jpgWriter);
+                           jpgWriter.Free;
+                      end;
+             itPNG  : begin
+                           pngWriter := TFPWriterPNG.Create;
+                           Self.EditedImage.SaveToStream(app_stream, pngWriter);
+                           pngWriter.Free;
+                      end;
+             itBMP  : begin
+                           Self.EditedImage.Bitmap.SaveToStream(app_stream);
+                      end;
+        else
+            Self.EditedImage.Bitmap.SaveToStream(app_stream);
+        end;
         app_stream.Position:=0;
 
      finally

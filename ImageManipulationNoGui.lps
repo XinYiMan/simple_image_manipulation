@@ -7,9 +7,7 @@
       <Unit>
         <Filename Value="ImageManipulationNoGui.lpr"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="42"/>
-        <CursorPos X="30" Y="45"/>
+        <CursorPos X="20" Y="11"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit>
@@ -17,17 +15,23 @@
         <Filename Value="uimagemanipulation.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="uImageManipulation"/>
-        <EditorIndex Value="-1"/>
-        <WindowIndex Value="-1"/>
-        <TopLine Value="178"/>
-        <CursorPos X="9" Y="200"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="118"/>
+        <CursorPos X="86" Y="129"/>
         <UsageCount Value="20"/>
+        <Loaded Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory>
+      <Position>
+        <Filename Value="ImageManipulationNoGui.lpr"/>
+        <Caret Line="11" Column="20"/>
+      </Position>
+    </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
-      <Modes Count="0" ActiveMode=""/>
+      <Modes ActiveMode=""/>
     </RunParams>
   </ProjectSession>
 </CONFIG>
