@@ -30,8 +30,8 @@
         <UnitName Value="uImageManipulation"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="184"/>
-        <CursorPos X="6" Y="188"/>
+        <TopLine Value="480"/>
+        <CursorPos X="47" Y="487"/>
         <UsageCount Value="32"/>
         <Loaded Value="True"/>
       </Unit>
@@ -107,7 +107,7 @@
         <UsageCount Value="10"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="28">
+    <JumpHistory HistoryIndex="29">
       <Position>
         <Filename Value="unit1.pas"/>
         <Caret Line="162" Column="38" TopLine="145"/>
@@ -223,6 +223,10 @@
       <Position>
         <Filename Value="uimagemanipulation.pas"/>
         <Caret Line="35" Column="28" TopLine="28"/>
+      </Position>
+      <Position>
+        <Filename Value="uimagemanipulation.pas"/>
+        <Caret Line="188" Column="6" TopLine="184"/>
       </Position>
     </JumpHistory>
     <RunParams>
