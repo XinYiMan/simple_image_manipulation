@@ -1,0 +1,247 @@
+object Form1: TForm1
+  Left = 372
+  Height = 486
+  Top = 126
+  Width = 734
+  Caption = 'Form1'
+  ClientHeight = 486
+  ClientWidth = 734
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  LCLVersion = '2.1.0.0'
+  object Edit1: TEdit
+    Left = 14
+    Height = 34
+    Top = 13
+    Width = 354
+    ReadOnly = True
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 384
+    Height = 25
+    Top = 13
+    Width = 112
+    Caption = 'Load image'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Image1: TImage
+    Left = 17
+    Height = 425
+    Top = 50
+    Width = 479
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Center = True
+    Proportional = True
+  end
+  object Button2: TButton
+    Left = 504
+    Height = 25
+    Top = 80
+    Width = 216
+    Anchors = [akTop, akRight]
+    Caption = 'Cut zone'
+    OnClick = Button2Click
+    TabOrder = 2
+  end
+  object Txt_TopRect: TEdit
+    Left = 504
+    Height = 34
+    Top = 50
+    Width = 48
+    Anchors = [akTop, akRight]
+    TabOrder = 3
+    Text = '10'
+  end
+  object Txt_BottomRect: TEdit
+    Left = 560
+    Height = 34
+    Top = 50
+    Width = 48
+    Anchors = [akTop, akRight]
+    TabOrder = 4
+    Text = '600'
+  end
+  object Txt_LeftRect: TEdit
+    Left = 616
+    Height = 34
+    Top = 50
+    Width = 48
+    Anchors = [akTop, akRight]
+    TabOrder = 5
+    Text = '200'
+  end
+  object Txt_RightRect: TEdit
+    Left = 672
+    Height = 34
+    Top = 50
+    Width = 48
+    Anchors = [akTop, akRight]
+    TabOrder = 6
+    Text = '900'
+  end
+  object Button3: TButton
+    Left = 504
+    Height = 25
+    Top = 112
+    Width = 216
+    Anchors = [akTop, akRight]
+    Caption = 'Rotate Left'
+    OnClick = Button3Click
+    TabOrder = 7
+  end
+  object Button4: TButton
+    Left = 504
+    Height = 25
+    Top = 144
+    Width = 216
+    Anchors = [akTop, akRight]
+    Caption = 'Rotate Right'
+    OnClick = Button4Click
+    TabOrder = 8
+  end
+  object Button5: TButton
+    Left = 504
+    Height = 25
+    Top = 176
+    Width = 216
+    Anchors = [akTop, akRight]
+    Caption = 'Horizontal Flip'
+    OnClick = Button5Click
+    TabOrder = 9
+  end
+  object Button6: TButton
+    Left = 504
+    Height = 25
+    Top = 208
+    Width = 216
+    Anchors = [akTop, akRight]
+    Caption = 'Vertical Flip'
+    OnClick = Button6Click
+    TabOrder = 10
+  end
+  object Button7: TButton
+    Left = 504
+    Height = 25
+    Top = 240
+    Width = 152
+    Anchors = [akTop, akRight]
+    Caption = 'Brightness'
+    OnClick = Button7Click
+    TabOrder = 11
+  end
+  object Txt_Brightness_Value: TEdit
+    Left = 664
+    Height = 34
+    Top = 240
+    Width = 56
+    Anchors = [akTop, akRight]
+    TabOrder = 12
+    Text = '10'
+  end
+  object Button8: TButton
+    Left = 504
+    Height = 25
+    Top = 272
+    Width = 152
+    Anchors = [akTop, akRight]
+    Caption = 'Contrast'
+    OnClick = Button8Click
+    TabOrder = 13
+  end
+  object Txt_Contrast_Value: TEdit
+    Left = 664
+    Height = 34
+    Top = 272
+    Width = 56
+    Anchors = [akTop, akRight]
+    TabOrder = 14
+    Text = '10'
+  end
+  object Button9: TButton
+    Left = 504
+    Height = 25
+    Top = 304
+    Width = 152
+    Anchors = [akTop, akRight]
+    Caption = 'Zoom'
+    OnClick = Button9Click
+    TabOrder = 15
+  end
+  object Txt_Zoom_Value: TEdit
+    Left = 664
+    Height = 34
+    Top = 304
+    Width = 56
+    Anchors = [akTop, akRight]
+    TabOrder = 16
+    Text = '10'
+  end
+  object Button10: TButton
+    Left = 504
+    Height = 25
+    Top = 450
+    Width = 216
+    Anchors = [akRight, akBottom]
+    Caption = 'SetOriginal'
+    OnClick = Button10Click
+    TabOrder = 17
+  end
+  object Button11: TButton
+    Left = 504
+    Height = 25
+    Top = 336
+    Width = 152
+    Anchors = [akTop, akRight]
+    Caption = 'Encode Gamma'
+    OnClick = Button11Click
+    TabOrder = 18
+  end
+  object Txt_EncodeGamma: TEdit
+    Left = 664
+    Height = 34
+    Top = 336
+    Width = 56
+    Anchors = [akTop, akRight]
+    TabOrder = 19
+    Text = '1.7'
+  end
+  object Button12: TButton
+    Left = 504
+    Height = 25
+    Top = 368
+    Width = 152
+    Anchors = [akTop, akRight]
+    Caption = 'Decode Gamma'
+    OnClick = Button12Click
+    TabOrder = 20
+  end
+  object Txt_DecodeGamma: TEdit
+    Left = 664
+    Height = 34
+    Top = 368
+    Width = 56
+    Anchors = [akTop, akRight]
+    TabOrder = 21
+    Text = '1.7'
+  end
+  object Button13: TButton
+    Left = 504
+    Height = 25
+    Top = 424
+    Width = 216
+    Anchors = [akRight, akBottom]
+    Caption = 'Save'
+    OnClick = Button13Click
+    TabOrder = 22
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 444
+    Top = 40
+  end
+  object SaveDialog1: TSaveDialog
+    Left = 546
+    Top = 18
+  end
+end

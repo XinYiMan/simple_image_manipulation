@@ -54,7 +54,8 @@ type
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
   private
-         app        : TImageManipulation;
+         app           : TImageManipulation;
+         file_caricato : string;
          procedure SetEnabled(value : boolean);
   public
 
@@ -117,6 +118,9 @@ begin
           Self.Image1.Picture.LoadFromFile(Self.Edit1.Text);
 
           app.LoadFromFile(Self.Edit1.Text);
+
+          file_caricato := Self.Edit1.Text;
+
           SetEnabled(true);
      end else begin
           SetEnabled(false);
@@ -132,7 +136,7 @@ begin
      app_stream := TMemoryStream.Create;
      try
 
-        app.SaveToStream(app_stream);
+        app.SaveToStream(app_stream, app.GetExtensionFromNameFile(file_caricato));
         app_stream.Position:=0;
         Self.Image1.Picture.LoadFromStream(app_stream);
 
@@ -154,7 +158,7 @@ begin
      app_stream := TMemoryStream.Create;
      try
 
-        app.SaveToStream(app_stream);
+        app.SaveToStream(app_stream, app.GetExtensionFromNameFile(file_caricato));
         app_stream.Position:=0;
         Self.Image1.Picture.LoadFromStream(app_stream);
 
@@ -178,7 +182,7 @@ begin
      app_stream := TMemoryStream.Create;
      try
 
-        app.SaveToStream(app_stream);
+        app.SaveToStream(app_stream, app.GetExtensionFromNameFile(file_caricato));
         app_stream.Position:=0;
         Self.Image1.Picture.LoadFromStream(app_stream);
 
@@ -218,7 +222,7 @@ begin
      app_stream := TMemoryStream.Create;
      try
 
-        app.SaveToStream(app_stream);
+        app.SaveToStream(app_stream, app.GetExtensionFromNameFile(file_caricato));
         app_stream.Position:=0;
         Self.Image1.Picture.LoadFromStream(app_stream);
 
@@ -236,8 +240,7 @@ begin
 
      app_stream := TMemoryStream.Create;
      try
-
-        app.SaveToStream(app_stream);
+        app.SaveToStream(app_stream, app.GetExtensionFromNameFile(file_caricato));
         app_stream.Position:=0;
         Self.Image1.Picture.LoadFromStream(app_stream);
 
@@ -256,7 +259,7 @@ begin
      app_stream := TMemoryStream.Create;
      try
 
-        app.SaveToStream(app_stream);
+        app.SaveToStream(app_stream, app.GetExtensionFromNameFile(file_caricato));
         app_stream.Position:=0;
         Self.Image1.Picture.LoadFromStream(app_stream);
 
@@ -275,7 +278,7 @@ begin
      app_stream := TMemoryStream.Create;
      try
 
-        app.SaveToStream(app_stream);
+        app.SaveToStream(app_stream, app.GetExtensionFromNameFile(file_caricato));
         app_stream.Position:=0;
         Self.Image1.Picture.LoadFromStream(app_stream);
 
@@ -294,7 +297,7 @@ begin
      app_stream := TMemoryStream.Create;
      try
 
-        app.SaveToStream(app_stream);
+        app.SaveToStream(app_stream, app.GetExtensionFromNameFile(file_caricato));
         app_stream.Position:=0;
         Self.Image1.Picture.LoadFromStream(app_stream);
 
@@ -313,7 +316,7 @@ begin
      app_stream := TMemoryStream.Create;
      try
 
-        app.SaveToStream(app_stream);
+        app.SaveToStream(app_stream, app.GetExtensionFromNameFile(file_caricato));
         app_stream.Position:=0;
         Self.Image1.Picture.LoadFromStream(app_stream);
 
@@ -332,7 +335,7 @@ begin
      app_stream := TMemoryStream.Create;
      try
 
-        app.SaveToStream(app_stream);
+        app.SaveToStream(app_stream, app.GetExtensionFromNameFile(file_caricato));
         app_stream.Position:=0;
         Self.Image1.Picture.LoadFromStream(app_stream);
 
@@ -351,7 +354,7 @@ begin
      app_stream := TMemoryStream.Create;
      try
 
-        app.SaveToStream(app_stream);
+        app.SaveToStream(app_stream, app.GetExtensionFromNameFile(file_caricato));
         app_stream.Position:=0;
         Self.Image1.Picture.LoadFromStream(app_stream);
 

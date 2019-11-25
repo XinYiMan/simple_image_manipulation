@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="ImageManipulationGui.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="15" Y="11"/>
+        <UsageCount Value="32"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unit1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit1"/>
+        <TopLine Value="343"/>
+        <CursorPos X="20" Y="357"/>
+        <UsageCount Value="32"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uimagemanipulation.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uImageManipulation"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="184"/>
+        <CursorPos X="6" Y="188"/>
+        <UsageCount Value="32"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uimagesmart.pas"/>
+        <UnitName Value="uImageSmart"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="24"/>
+        <CursorPos X="67" Y="34"/>
+        <UsageCount Value="22"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/fpcupdeluxe/installazioni/20190826/lazarus/lcl/include/fpimagebitmap.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="118"/>
+        <CursorPos X="30" Y="132"/>
+        <UsageCount Value="13"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../../Documents/pkg/bgrabitmap-10.6.3/bgrabitmap/bgradefaultbitmap.pas"/>
+        <UnitName Value="BGRADefaultBitmap"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="551"/>
+        <CursorPos X="15" Y="572"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../../Documents/pkg/bgrabitmap-10.6.3/bgrabitmap/bgracustombitmap.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="302"/>
+        <CursorPos X="79" Y="324"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../../Documents/pkg/bgrabitmap-10.6.3/bgrabitmap/bgrabitmaptypes.pas"/>
+        <UnitName Value="BGRABitmapTypes"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="114"/>
+        <CursorPos X="22" Y="137"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/fpcupdeluxe/installazioni/20190826/fpcsrc/packages/fcl-image/src/fpimage.pp"/>
+        <UnitName Value="FPImage"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="184"/>
+        <CursorPos X="3" Y="207"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/fpcupdeluxe/installazioni/20190826/fpcsrc/packages/fcl-image/src/fpreadjpeg.pas"/>
+        <UnitName Value="FPReadJPEG"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="11"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/fpcupdeluxe/installazioni/20190826/fpcsrc/packages/fcl-image/src/fpwritebmp.pp"/>
+        <UnitName Value="FPWriteBMP"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="11"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/fpcupdeluxe/installazioni/20190826/lazarus/lcl/include/picture.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="572"/>
+        <CursorPos X="49" Y="589"/>
+        <UsageCount Value="11"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/fpcupdeluxe/installazioni/20190826/fpcsrc/packages/fcl-image/src/fpreadpng.pp"/>
+        <UnitName Value="FPReadPNG"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="28">
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="162" Column="38" TopLine="145"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="245" Column="6" TopLine="231"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="252" Column="32" TopLine="238"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="240" Column="22" TopLine="231"/>
+      </Position>
+      <Position>
+        <Filename Value="uimagemanipulation.pas"/>
+        <Caret Line="35" Column="29" TopLine="27"/>
+      </Position>
+      <Position>
+        <Filename Value="uimagemanipulation.pas"/>
+        <Caret Line="199" TopLine="188"/>
+      </Position>
+      <Position>
+        <Filename Value="uimagemanipulation.pas"/>
+        <Caret Line="45" Column="77" TopLine="33"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="240" Column="22" TopLine="231"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="58" Column="24" TopLine="51"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="122" Column="24" TopLine="109"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="243" Column="19" TopLine="235"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="263" Column="32" TopLine="248"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="281" Column="81" TopLine="267"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="300" Column="81" TopLine="286"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="319" Column="81" TopLine="305"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="338" Column="81" TopLine="324"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="357" Column="81" TopLine="343"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="139" Column="81" TopLine="132"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="161" Column="81" TopLine="147"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="185" Column="81" TopLine="171"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="225" Column="81" TopLine="212"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="243" Column="26" TopLine="229"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="262" Column="25" TopLine="248"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="281" Column="25" TopLine="267"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="300" Column="25" TopLine="286"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="319" Column="25" TopLine="305"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="338" Column="25" TopLine="324"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="357" Column="20" TopLine="343"/>
+      </Position>
+      <Position>
+        <Filename Value="uimagemanipulation.pas"/>
+        <Caret Line="35" Column="28" TopLine="28"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

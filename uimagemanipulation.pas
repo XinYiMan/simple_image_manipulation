@@ -42,6 +42,7 @@ uses
           procedure Zoom(value_perc: single);
           procedure EncodeGamma(gamma : single);
           procedure DecodeGamma(gamma : single);
+          function GetExtensionFromNameFile(name_file : string) : TImageType;
   end;
 
 implementation
@@ -479,6 +480,18 @@ begin
         end;
   end;
 
+end;
+
+function TImageManipulation.GetExtensionFromNameFile(name_file: string
+  ): TImageType;
+begin
+     case lowercase(ExtractFileExt(name_file)) of
+          '.jpg'  : result := itJPEG;
+          '.jpeg' : result := itJPEG;
+          '.png'  : result := itPNG;
+          else
+              result := itBMP;
+     end;
 end;
 
 function TImageManipulation.MyTruncate(value: single): byte;

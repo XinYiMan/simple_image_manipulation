@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 673
+  Left = 372
   Height = 486
-  Top = 300
+  Top = 126
   Width = 734
   Caption = 'Form1'
   ClientHeight = 486
@@ -11,7 +11,7 @@ object Form1: TForm1
   LCLVersion = '2.1.0.0'
   object Edit1: TEdit
     Left = 14
-    Height = 21
+    Height = 34
     Top = 13
     Width = 354
     ReadOnly = True
@@ -47,7 +47,7 @@ object Form1: TForm1
   end
   object Txt_TopRect: TEdit
     Left = 504
-    Height = 21
+    Height = 34
     Top = 50
     Width = 48
     Anchors = [akTop, akRight]
@@ -56,7 +56,7 @@ object Form1: TForm1
   end
   object Txt_BottomRect: TEdit
     Left = 560
-    Height = 21
+    Height = 34
     Top = 50
     Width = 48
     Anchors = [akTop, akRight]
@@ -65,7 +65,7 @@ object Form1: TForm1
   end
   object Txt_LeftRect: TEdit
     Left = 616
-    Height = 21
+    Height = 34
     Top = 50
     Width = 48
     Anchors = [akTop, akRight]
@@ -74,7 +74,7 @@ object Form1: TForm1
   end
   object Txt_RightRect: TEdit
     Left = 672
-    Height = 21
+    Height = 34
     Top = 50
     Width = 48
     Anchors = [akTop, akRight]
@@ -133,7 +133,7 @@ object Form1: TForm1
   end
   object Txt_Brightness_Value: TEdit
     Left = 664
-    Height = 21
+    Height = 34
     Top = 240
     Width = 56
     Anchors = [akTop, akRight]
@@ -152,7 +152,7 @@ object Form1: TForm1
   end
   object Txt_Contrast_Value: TEdit
     Left = 664
-    Height = 21
+    Height = 34
     Top = 272
     Width = 56
     Anchors = [akTop, akRight]
@@ -171,7 +171,7 @@ object Form1: TForm1
   end
   object Txt_Zoom_Value: TEdit
     Left = 664
-    Height = 21
+    Height = 34
     Top = 304
     Width = 56
     Anchors = [akTop, akRight]
@@ -200,7 +200,7 @@ object Form1: TForm1
   end
   object Txt_EncodeGamma: TEdit
     Left = 664
-    Height = 21
+    Height = 34
     Top = 336
     Width = 56
     Anchors = [akTop, akRight]
@@ -219,7 +219,7 @@ object Form1: TForm1
   end
   object Txt_DecodeGamma: TEdit
     Left = 664
-    Height = 21
+    Height = 34
     Top = 368
     Width = 56
     Anchors = [akTop, akRight]

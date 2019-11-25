@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="/fpcupdeluxe/20191114/fpc/bin/x86_64-linux/fpc.sh" Date="1574683738"/>
+  <Params Value=" -MObjFPC -Scghi -Cg -O1 -g -gl -l -vewnhibq -Fi/home/ngit/Documenti/GitHub/simple_image_manipulation/lib/x86_64-linux -Fu/fpcupdeluxe/20191114/config_lazarus/onlinepackagemanager/packages/bgrabitmap-master/bgrabitmap/lib/x86_64-linux/3.3.1 -Fu/fpcupdeluxe/20191114/lazarus/components/opengl/lib/x86_64-linux/gtk2 -Fu/fpcupdeluxe/20191114/lazarus/lcl/units/x86_64-linux/gtk2 -Fu/fpcupdeluxe/20191114/lazarus/lcl/units/x86_64-linux -Fu/fpcupdeluxe/20191114/lazarus/components/lazutils/lib/x86_64-linux -Fu/fpcupdeluxe/20191114/lazarus/packager/units/x86_64-linux -Fu/home/ngit/Documenti/GitHub/simple_image_manipulation/ -FU/home/ngit/Documenti/GitHub/simple_image_manipulation/lib/x86_64-linux/ -FE/home/ngit/Documenti/GitHub/simple_image_manipulation/bin/x86_64-linux/ -o/home/ngit/Documenti/GitHub/simple_image_manipulation/bin/x86_64-linux/ImageManipulationGui -dLCL -dLCLgtk2 ImageManipulationGui.lpr"/>
+</CONFIG>
