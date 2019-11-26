@@ -1,17 +1,17 @@
 object Form1: TForm1
-  Left = 372
-  Height = 486
-  Top = 126
-  Width = 734
+  Left = 659
+  Height = 621
+  Top = 219
+  Width = 809
   Caption = 'Form1'
-  ClientHeight = 486
-  ClientWidth = 734
+  ClientHeight = 621
+  ClientWidth = 809
   OnCreate = FormCreate
   OnDestroy = FormDestroy
   LCLVersion = '2.1.0.0'
   object Edit1: TEdit
     Left = 14
-    Height = 34
+    Height = 21
     Top = 13
     Width = 354
     ReadOnly = True
@@ -28,15 +28,13 @@ object Form1: TForm1
   end
   object Image1: TImage
     Left = 17
-    Height = 425
+    Height = 534
     Top = 50
-    Width = 479
+    Width = 554
     Anchors = [akTop, akLeft, akRight, akBottom]
-    Center = True
-    Proportional = True
   end
   object Button2: TButton
-    Left = 504
+    Left = 579
     Height = 25
     Top = 80
     Width = 216
@@ -46,8 +44,8 @@ object Form1: TForm1
     TabOrder = 2
   end
   object Txt_TopRect: TEdit
-    Left = 504
-    Height = 34
+    Left = 579
+    Height = 21
     Top = 50
     Width = 48
     Anchors = [akTop, akRight]
@@ -55,8 +53,8 @@ object Form1: TForm1
     Text = '10'
   end
   object Txt_BottomRect: TEdit
-    Left = 560
-    Height = 34
+    Left = 635
+    Height = 21
     Top = 50
     Width = 48
     Anchors = [akTop, akRight]
@@ -64,8 +62,8 @@ object Form1: TForm1
     Text = '600'
   end
   object Txt_LeftRect: TEdit
-    Left = 616
-    Height = 34
+    Left = 691
+    Height = 21
     Top = 50
     Width = 48
     Anchors = [akTop, akRight]
@@ -73,8 +71,8 @@ object Form1: TForm1
     Text = '200'
   end
   object Txt_RightRect: TEdit
-    Left = 672
-    Height = 34
+    Left = 747
+    Height = 21
     Top = 50
     Width = 48
     Anchors = [akTop, akRight]
@@ -82,7 +80,7 @@ object Form1: TForm1
     Text = '900'
   end
   object Button3: TButton
-    Left = 504
+    Left = 579
     Height = 25
     Top = 112
     Width = 216
@@ -92,7 +90,7 @@ object Form1: TForm1
     TabOrder = 7
   end
   object Button4: TButton
-    Left = 504
+    Left = 579
     Height = 25
     Top = 144
     Width = 216
@@ -102,7 +100,7 @@ object Form1: TForm1
     TabOrder = 8
   end
   object Button5: TButton
-    Left = 504
+    Left = 579
     Height = 25
     Top = 176
     Width = 216
@@ -112,7 +110,7 @@ object Form1: TForm1
     TabOrder = 9
   end
   object Button6: TButton
-    Left = 504
+    Left = 579
     Height = 25
     Top = 208
     Width = 216
@@ -122,7 +120,7 @@ object Form1: TForm1
     TabOrder = 10
   end
   object Button7: TButton
-    Left = 504
+    Left = 579
     Height = 25
     Top = 240
     Width = 152
@@ -132,8 +130,8 @@ object Form1: TForm1
     TabOrder = 11
   end
   object Txt_Brightness_Value: TEdit
-    Left = 664
-    Height = 34
+    Left = 739
+    Height = 21
     Top = 240
     Width = 56
     Anchors = [akTop, akRight]
@@ -141,7 +139,7 @@ object Form1: TForm1
     Text = '10'
   end
   object Button8: TButton
-    Left = 504
+    Left = 579
     Height = 25
     Top = 272
     Width = 152
@@ -151,8 +149,8 @@ object Form1: TForm1
     TabOrder = 13
   end
   object Txt_Contrast_Value: TEdit
-    Left = 664
-    Height = 34
+    Left = 739
+    Height = 21
     Top = 272
     Width = 56
     Anchors = [akTop, akRight]
@@ -160,7 +158,7 @@ object Form1: TForm1
     Text = '10'
   end
   object Button9: TButton
-    Left = 504
+    Left = 579
     Height = 25
     Top = 304
     Width = 152
@@ -170,8 +168,8 @@ object Form1: TForm1
     TabOrder = 15
   end
   object Txt_Zoom_Value: TEdit
-    Left = 664
-    Height = 34
+    Left = 739
+    Height = 21
     Top = 304
     Width = 56
     Anchors = [akTop, akRight]
@@ -179,9 +177,9 @@ object Form1: TForm1
     Text = '10'
   end
   object Button10: TButton
-    Left = 504
+    Left = 579
     Height = 25
-    Top = 450
+    Top = 585
     Width = 216
     Anchors = [akRight, akBottom]
     Caption = 'SetOriginal'
@@ -189,7 +187,7 @@ object Form1: TForm1
     TabOrder = 17
   end
   object Button11: TButton
-    Left = 504
+    Left = 579
     Height = 25
     Top = 336
     Width = 152
@@ -199,8 +197,8 @@ object Form1: TForm1
     TabOrder = 18
   end
   object Txt_EncodeGamma: TEdit
-    Left = 664
-    Height = 34
+    Left = 739
+    Height = 21
     Top = 336
     Width = 56
     Anchors = [akTop, akRight]
@@ -208,7 +206,7 @@ object Form1: TForm1
     Text = '1.7'
   end
   object Button12: TButton
-    Left = 504
+    Left = 579
     Height = 25
     Top = 368
     Width = 152
@@ -218,8 +216,8 @@ object Form1: TForm1
     TabOrder = 20
   end
   object Txt_DecodeGamma: TEdit
-    Left = 664
-    Height = 34
+    Left = 739
+    Height = 21
     Top = 368
     Width = 56
     Anchors = [akTop, akRight]
@@ -227,14 +225,86 @@ object Form1: TForm1
     Text = '1.7'
   end
   object Button13: TButton
-    Left = 504
+    Left = 579
     Height = 25
-    Top = 424
+    Top = 559
     Width = 216
     Anchors = [akRight, akBottom]
     Caption = 'Save'
     OnClick = Button13Click
     TabOrder = 22
+  end
+  object Label1: TLabel
+    Left = 120
+    Height = 1
+    Top = 607
+    Width = 1
+    Anchors = [akLeft, akBottom]
+    ParentColor = False
+  end
+  object Button14: TButton
+    Left = 14
+    Height = 25
+    Top = 592
+    Width = 90
+    Anchors = [akLeft, akBottom]
+    Caption = 'Dimension'
+    OnClick = Button14Click
+    TabOrder = 23
+  end
+  object Txt_Height_Resize: TEdit
+    Left = 579
+    Height = 21
+    Top = 416
+    Width = 80
+    Anchors = [akTop, akRight]
+    TabOrder = 24
+    Text = '600'
+  end
+  object Txt_Width_Resize: TEdit
+    Left = 715
+    Height = 21
+    Top = 416
+    Width = 80
+    Anchors = [akTop, akRight]
+    TabOrder = 25
+    Text = '800'
+  end
+  object Button15: TButton
+    Left = 579
+    Height = 25
+    Top = 440
+    Width = 216
+    Anchors = [akTop, akRight]
+    Caption = 'Resize'
+    OnClick = Button15Click
+    TabOrder = 26
+  end
+  object Txt_Percentual_Resize: TEdit
+    Left = 579
+    Height = 21
+    Top = 488
+    Width = 216
+    TabOrder = 27
+    Text = '50'
+  end
+  object Button16: TButton
+    Left = 579
+    Height = 25
+    Top = 512
+    Width = 216
+    Caption = 'Resize %'
+    OnClick = Button16Click
+    TabOrder = 28
+  end
+  object CheckBox1: TCheckBox
+    Left = 512
+    Height = 18
+    Top = 13
+    Width = 92
+    Caption = 'Proportional'
+    OnChange = CheckBox1Change
+    TabOrder = 29
   end
   object OpenDialog1: TOpenDialog
     Left = 444

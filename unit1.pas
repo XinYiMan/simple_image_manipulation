@@ -17,6 +17,9 @@ type
     Button11: TButton;
     Button12: TButton;
     Button13: TButton;
+    Button14: TButton;
+    Button15: TButton;
+    Button16: TButton;
     Button2: TButton;
     Button3: TButton;
     Button4: TButton;
@@ -25,7 +28,12 @@ type
     Button7: TButton;
     Button8: TButton;
     Button9: TButton;
+    CheckBox1: TCheckBox;
     Edit1: TEdit;
+    Txt_Percentual_Resize: TEdit;
+    Txt_Height_Resize: TEdit;
+    Txt_Width_Resize: TEdit;
+    Label1: TLabel;
     SaveDialog1: TSaveDialog;
     Txt_EncodeGamma: TEdit;
     Txt_DecodeGamma: TEdit;
@@ -42,6 +50,9 @@ type
     procedure Button11Click(Sender: TObject);
     procedure Button12Click(Sender: TObject);
     procedure Button13Click(Sender: TObject);
+    procedure Button14Click(Sender: TObject);
+    procedure Button15Click(Sender: TObject);
+    procedure Button16Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
@@ -51,6 +62,7 @@ type
     procedure Button7Click(Sender: TObject);
     procedure Button8Click(Sender: TObject);
     procedure Button9Click(Sender: TObject);
+    procedure CheckBox1Change(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
   private
@@ -96,6 +108,8 @@ begin
      Self.Button11.Enabled:=value;
      Self.Button12.Enabled:=value;
      Self.Button13.Enabled:=value;
+     Self.Button14.Enabled:=value;
+     Self.Button15.Enabled:=value;
 
      Self.Txt_TopRect.Enabled:=value;
      Self.Txt_BottomRect.Enabled:=value;
@@ -105,6 +119,9 @@ begin
      Self.Txt_Brightness_Value.Enabled:=value;
      Self.Txt_Contrast_Value.Enabled:=value;
      Self.Txt_Zoom_Value.Enabled:=value;
+
+     Self.Txt_Height_Resize.Enabled:=value;
+     Self.Txt_Width_Resize.Enabled:=value;
 end;
 
 procedure TForm1.Button1Click(Sender: TObject);
@@ -203,6 +220,55 @@ begin
              DeleteFile(Self.SaveDialog1.FileName);
           Self.Image1.Picture.SaveToFile(Self.SaveDialog1.FileName);
           ShowMessage('File saved');
+     end;
+end;
+
+procedure TForm1.Button14Click(Sender: TObject);
+begin
+     Self.Label1.Caption := 'H: ' + IntToStr(app.GetEditedHeight) + ' W: ' + IntToStr(app.GetEditedWidth);
+end;
+
+procedure TForm1.Button15Click(Sender: TObject);
+var
+   app_stream : TMemoryStream;
+begin
+     app.Resize(StrToIntDef(Self.Txt_Height_Resize.Text,1), StrToIntDef(Self.Txt_Width_Resize.Text,1));
+
+     app_stream := TMemoryStream.Create;
+     try
+
+        app.SaveToStream(app_stream, app.GetExtensionFromNameFile(file_caricato));
+        app_stream.Position:=0;
+        Self.Image1.Picture.LoadFromStream(app_stream);
+
+     finally
+       app_stream.Free;
+       app_stream := nil;
+     end;
+end;
+
+procedure TForm1.Button16Click(Sender: TObject);
+var
+   app_stream : TMemoryStream;
+   new_height : integer;
+   new_width  : integer;
+begin
+
+     new_height := Trunc((app.GetEditedHeight / 100) * StrToIntDef(Self.Txt_Percentual_Resize.Text,100));
+     new_width := Trunc((app.GetEditedWidth / 100) * StrToIntDef(Self.Txt_Percentual_Resize.Text,100));
+
+     app.Resize(new_height, new_width);
+
+     app_stream := TMemoryStream.Create;
+     try
+
+        app.SaveToStream(app_stream, app.GetExtensionFromNameFile(file_caricato));
+        app_stream.Position:=0;
+        Self.Image1.Picture.LoadFromStream(app_stream);
+
+     finally
+       app_stream.Free;
+       app_stream := nil;
      end;
 end;
 
@@ -362,6 +428,12 @@ begin
        app_stream.Free;
        app_stream := nil;
      end;
+end;
+
+procedure TForm1.CheckBox1Change(Sender: TObject);
+begin
+     Self.Image1.Proportional:=Self.CheckBox1.Checked;
+     Self.Image1.Invalidate;
 end;
 
 end.

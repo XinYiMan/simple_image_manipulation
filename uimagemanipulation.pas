@@ -43,6 +43,11 @@ uses
           procedure EncodeGamma(gamma : single);
           procedure DecodeGamma(gamma : single);
           function GetExtensionFromNameFile(name_file : string) : TImageType;
+          procedure Resize(NewHeight : integer; NewWidth : integer);
+          function GetOriginalHeight : integer;
+          function GetOriginalWidth : integer;
+          function GetEditedHeight : integer;
+          function GetEditedWidth : integer;
   end;
 
 implementation
@@ -492,6 +497,47 @@ begin
           else
               result := itBMP;
      end;
+end;
+
+procedure TImageManipulation.Resize(NewHeight: integer; NewWidth: integer);
+begin
+
+     try
+        try
+
+           BGRAReplace(Self.EditedImage , Self.EditedImage.Resample(NewWidth, NewHeight, rmSimpleStretch));
+
+        finally
+
+       end;
+     except
+           on E: Exception do
+           begin
+
+
+           end;
+     end;
+
+end;
+
+function TImageManipulation.GetOriginalHeight: integer;
+begin
+     result := Self.OriginalImage.height;
+end;
+
+function TImageManipulation.GetOriginalWidth: integer;
+begin
+     result := Self.OriginalImage.width;
+end;
+
+function TImageManipulation.GetEditedHeight: integer;
+begin
+     result := Self.EditedImage.height;
+end;
+
+function TImageManipulation.GetEditedWidth: integer;
+begin
+     result := Self.EditedImage.width;
 end;
 
 function TImageManipulation.MyTruncate(value: single): byte;
