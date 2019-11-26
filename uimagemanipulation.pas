@@ -76,55 +76,68 @@ var
    jpgReader : TFPReaderJPEG; //in unit FPReadJpeg
    pngReader : TFPReaderPNG; //in unit FPReadPng
 begin
+     try
+        try
 
-     if mode = itIgnore then
-     begin
-          extension := lowercase(ExtractFileExt(name_file));
-          case extension of
+           if mode = itIgnore then
+           begin
+                extension := lowercase(ExtractFileExt(name_file));
+                case extension of
 
-               '.jpg'  : mode := itJPEG;
-               '.jpeg' : mode := itJPEG;
-               '.png'  : mode := itPNG;
-               else
-                   mode := itBMP;
-          end;
+                     '.jpg'  : mode := itJPEG;
+                     '.jpeg' : mode := itJPEG;
+                     '.png'  : mode := itPNG;
+                     else
+                         mode := itBMP;
+                end;
+           end;
+
+           if FileExists(name_file) then
+           begin
+                case mode of
+                     itJPEG : begin
+                                   Self.ValidFormat := true;
+                                   jpgReader := TFPReaderJPEG.Create;
+                                   Self.OriginalImage.LoadFromFile(name_file, jpgReader);
+                                   jpgReader.Free;
+                                   result := true;
+                              end;
+                     itPNG  : begin
+                                   Self.ValidFormat := true;
+                                   pngReader := TFPReaderPNG.Create;
+                                   Self.OriginalImage.LoadFromFile(name_file, pngReader);
+                                   pngReader.Free;
+                                   result := true;
+                              end;
+                     itBMP  : begin
+                                   Self.ValidFormat := true;
+                                   Self.OriginalImage.LoadFromFile(name_file);
+                                   result := true;
+                              end;
+                     else
+                         Self.ValidFormat := false;
+
+                     end;
+           end else begin
+               Self.OriginalImage.Bitmap.Clear;
+               Self.EditedImage.Bitmap.Clear;
+               Self.ValidFormat := false;
+               result := false;
+           end;
+
+           if (result) and (Self.ValidFormat) then
+              SetOriginalImage;
+
+        finally
+       end;
+     except
+           on E: Exception do
+           begin
+
+                result := false;
+
+           end;
      end;
-
-     if FileExists(name_file) then
-     begin
-          case mode of
-               itJPEG : begin
-                             Self.ValidFormat := true;
-                             jpgReader := TFPReaderJPEG.Create;
-                             Self.OriginalImage.LoadFromFile(name_file, jpgReader);
-                             jpgReader.Free;
-                             result := true;
-                        end;
-               itPNG  : begin
-                             Self.ValidFormat := true;
-                             pngReader := TFPReaderPNG.Create;
-                             Self.OriginalImage.LoadFromFile(name_file, pngReader);
-                             pngReader.Free;
-                             result := true;
-                        end;
-               itBMP  : begin
-                             Self.ValidFormat := true;
-                             Self.OriginalImage.LoadFromFile(name_file);
-                             result := true;
-                        end;
-               else
-                   Self.ValidFormat := false;
-
-               end;
-     end else begin
-         Self.OriginalImage.Bitmap.Clear;
-         Self.EditedImage.Bitmap.Clear;
-         Self.ValidFormat := false;
-         result := false;
-     end;
-
-     if (result) and (Self.ValidFormat) then
-        SetOriginalImage;
 end;
 
 function TImageManipulation.CutRectangle(FSelectionRect : TRect): boolean;
